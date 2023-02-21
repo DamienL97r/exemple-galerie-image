@@ -1,0 +1,108 @@
+/*Style général*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.header-rea {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header-rea > h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.header-rea > p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+/*Gallerie*/
+
+
+
+.container-gallerie {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallerie-card {
+    margin: 10px;
+    padding: 5px;
+}
+
+.gallerie-card > img {
+    height: 300px;
+    width: 300px;
+}
+
+
+/*LightBox*/
+
+.container-gallerie > .lb-img {
+    margin: 10px;
+    padding: 5px;
+}
+
+
+
+/*Galerie avec hover*/
+
+
+.container-photo{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.068);
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-photo > img {
+    position: absolute;
+    width: 300px;
+
+}
+
+
+.container-hover{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.932);
+    width: 280px;
+    height: 280px;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.container-photo:hover > .container-hover {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    opacity: 1;
+}
+
+.container-hover > p {
+    padding-top: 45%;
+
+}
